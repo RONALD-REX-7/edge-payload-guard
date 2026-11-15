@@ -1,0 +1,11 @@
+{
+  "device_id": "esp32-s3-lab-01",
+  "timestamp_ms": 1794700000000,
+  "sequence": 42,
+  "readings": {
+    "temperature_c": 28.4,
+    "humidity_rh_pct": 61.2,
+    "distance_cm": 83.5
+  },
+  "status": "ok"
+}

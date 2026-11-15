@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge-payload-guard"
+version = "1.0.0"
+description = "Offline-first JSON Schema validation for embedded and IoT telemetry payloads."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "RONALD REX C H" }]
+keywords = ["embedded", "iot", "telemetry", "json-schema", "edge-computing", "validation"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Hardware"
+]
+dependencies = ["jsonschema>=4.23,<5"]
+
+[project.scripts]
+edge-payload-guard = "edge_payload_guard.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/RONALD-REX-7/edge-payload-guard"
+Repository = "https://github.com/RONALD-REX-7/edge-payload-guard"
+Issues = "https://github.com/RONALD-REX-7/edge-payload-guard/issues"
+Changelog = "https://github.com/RONALD-REX-7/edge-payload-guard/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["edge_payload_guard*"]
