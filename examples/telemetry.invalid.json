@@ -1,0 +1,10 @@
+{
+  "device_id": "",
+  "timestamp_ms": -10,
+  "sequence": 42.5,
+  "readings": {
+    "temperature_c": 148.2,
+    "humidity_rh_pct": 108
+  },
+  "unexpected_field": "not allowed"
+}
