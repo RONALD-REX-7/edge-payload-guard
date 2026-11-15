@@ -129,7 +129,7 @@ python -m pip install .
 python -m unittest discover -s tests -v
 ```
 
-CI tests Python 3.10–3.13 and performs a Docker build/smoke test. Pushing a semantic-version tag (`vMAJOR.MINOR.PATCH`) automatically verifies and publishes the corresponding container. A manual `workflow_dispatch` is also available for controlled publication.
+CI tests Python 3.10–3.13 and performs a Docker build/smoke test. Merging a version bump to `pyproject.toml` on `main` automatically verifies and publishes that version. A manual `workflow_dispatch` is also available for controlled publication.
 
 ## Package details
 
